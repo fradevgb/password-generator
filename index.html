@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Contraseñas - App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/2x/baseline_key_white_36dp.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container container-header">
+      <h1>Generador de Contraseñas</h1>
+      <h3 class="password-display">Contraseña</h3>
+      <form class="password-form">
+        <label for="number-char-amount">Número de Caracteres</label>
+        <div>
+          <input type="range" class="range-char" min="1" max="100" value="1" />
+          <input
+            type="number"
+            class="number-char"
+            min="1"
+            max="100"
+            value="1"
+          />
+        </div>
+
+        <label for="numbers">Números</label>
+        <input type="checkbox" class="numbers" />
+
+        <label for="symbols">Símbolos</label>
+        <input type="checkbox" class="symbols" />
+
+        <label for="uppercase">Mayúsculas</label>
+        <input type="checkbox" class="uppercase" />
+
+        <input type="submit" value="Generar Contraseña" />
+      </form>
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
